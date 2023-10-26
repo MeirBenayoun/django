@@ -1,6 +1,6 @@
 name: Check for Vulnerabilities
 on:
-  pull_request:
+  push:
 
 jobs:
   oxeye-scan:
@@ -15,3 +15,4 @@ jobs:
           client-id: ${{ secrets.OXEYE_CICD_CLIENT_ID }}
           secret: ${{ secrets.OXEYE_CICD_SECRET }}
           workspace-id: 'a5f14141-8f6c-466e-aa06-2c77d03fb0b5'
+
