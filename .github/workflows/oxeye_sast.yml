@@ -14,5 +14,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           client-id: ${{ secrets.OXEYE_CICD_CLIENT_ID }}
           secret: ${{ secrets.OXEYE_CICD_SECRET }}
-          workspace-id: 'a5f14141-8f6c-466e-aa06-2c77d03fb0b5'
+          workspace-id: '1f324138-5ec3-4998-8ff8-b44b23176534'
 
