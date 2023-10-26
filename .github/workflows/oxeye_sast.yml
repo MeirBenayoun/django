@@ -19,6 +19,6 @@ jobs:
           secret: ${{ secrets.OXEYE_CICD_SECRET }}
           workspace-id: '1f324138-5ec3-4998-8ff8-b44b23176534'
           release: main
-          host: ‘api.staging-oxeye.net’
+          host: api.staging-oxeye.net
 
 
