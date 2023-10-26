@@ -1,0 +1,17 @@
+name: Check for Vulnerabilities
+on:
+  pull_request:
+
+jobs:
+  oxeye-scan:
+    name: Oxeye SCAN
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Oxeye Scan
+        uses: ox-eye/github-actions/oxeye-scan@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          client-id: ${{ secrets.OXEYE_CICD_CLIENT_ID }}
+          secret: ${{ secrets.OXEYE_CICD_SECRET }}
+          workspace-id: 'a5f14141-8f6c-466e-aa06-2c77d03fb0b5'
